@@ -6,7 +6,5 @@ export default function Page({ params }) {
     () => import(`./${params.document}.mdx`)
   );
 
-  console.log(params)
-  // return <h1>hello</h1>
   return <DynamicMDXComponent />;
-}
+};
